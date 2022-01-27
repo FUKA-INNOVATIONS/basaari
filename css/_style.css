@@ -1,0 +1,562 @@
+/* fontti: valittu fontpir sivusta, Rubic ja Karla, Regular, Medium ja Bold */
+/* font-family: 'Karla', sans-serif;*/
+/* font-family: 'Rubik', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+#send-order{
+    height: 50px;
+    background: #D96D00;
+    color: white;
+}
+
+#order-success-msg{
+    margin: auto;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+#map-markers-home {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 70px;
+}
+
+.home-welcome{
+    font-size: 40px;
+    color: #D96D00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.navHeader{
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    background: #efefef;
+    justify-content: space-between;
+    padding: 10px 60px 10px 60px;
+}
+.navHeader img{
+    width: 150px;
+    height: 60px;
+}
+.navHeader ul{
+    margin-top: 20px;
+}
+.navHeader li{
+    list-style-type: none;
+    display: inline;
+    padding-left: 20px;
+}
+.mobile-menu{
+    display: none;
+}
+.card-mobile{
+    display: none;
+}
+a{
+    color: #707070;
+    padding: 5px;
+    text-decoration: none;
+}
+li a:hover{
+    color: #D96D00;
+}
+.mobile_container{
+    display: none;
+}
+.card{
+    background: #707070;
+    border-radius: 20%;
+    color: #EFEFEF;
+}
+.card:hover{
+    background: #D96D00;
+    color: white;
+}
+.card ion-icon{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+.container,
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.shoppingCard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+.shoppingCard h3{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+p{
+    margin-bottom: 20px;
+}
+.image{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.shoppingCard button{
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.shoppingbasket{
+    width: 75%;
+    float: left;
+}
+.location {
+    width: 25%;
+    background: #707070;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.shoppingCard button:hover {
+    background:  #D96D00;
+    color: #EFEFEF;
+    cursor: pointer;
+}
+.shoppingCard:hover{
+    box-shadow: 0 4px 8px 0 #D96D00;
+    cursor: pointer;
+}
+
+
+.footer {
+    padding: 50px;
+    background: #f5f3f3;
+    display: flex;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 50px;
+}
+footer li{
+    list-style-type: none;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.logo{
+    width: 25%;
+}
+.logo img{
+    width: 200px;
+}
+.navFooter{
+    width: 25%;
+}
+.social-media{
+    width: 25%;
+    color: black;
+}
+.address{
+    width: 25%;
+    padding-top: 10px;
+}
+
+.social-media ul li ion-icon{
+    width: 50px;
+    height: 20px;
+}
+@media only screen and (max-width: 800px) {
+
+    .navHeader {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navHeader ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        height: 50px;
+        width: 40px;
+        padding-right: 10px;
+    }
+
+    .mobile-menu:hover {
+        color: #D96D00;
+    }
+
+    .mobile_container {
+        width: 100%;
+        height: 200px;
+        background: #f5f3f3;
+    }
+
+    .mobile_container a {
+        display: block;
+        list-style-type: none;
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    .mobile_container a:hover {
+        background: #D96D00;
+        color: #efefef;
+        cursor: pointer;
+    }
+
+
+    .card-mobile {
+        display: flex;
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        background: #D96D00;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-mobile ion-icon {
+        color: white;
+        height: 50px;
+        width: 50px;
+    }
+
+    .card-mobile span {
+        color: white;
+    }
+
+    .shoppingCard {
+        width: 60%;
+    }
+
+    .footer {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 100%
+    }
+
+    .navFooter {
+        width: 100%;
+    }
+
+    .social-media {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .social-media li {
+        display: inline;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+}
+
+/* --------- CART PAGE -------- */
+.product-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.product-container th {
+    width: 250px;
+}
+.product-header{
+    padding-bottom: 4px;
+    border-bottom: 2px solid #707070;
+}
+
+.total-price{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.total-price h3{
+    margin-right: 14px;
+}
+.total-price p{
+    margin-bottom: 0;
+}
+
+.product ion-icon:hover{
+    color: #D96D00;
+    cursor: pointer;
+}
+.product ion-icon{
+    width: 30px;
+    height: 30px;
+
+}
+.selected{
+    color: #D96D00;
+}
+.unselected{
+    color: #707070;;
+}
+.product-header th {
+    width: 200px;
+
+}
+.product td {
+    width: 200px;
+}
+.product img{
+    width: 100px;
+    margin: 20px;
+}
+.product td{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #f5f3f3;
+}
+@media only screen and (max-width: 800px) {
+    .product-container{
+        display: block;
+    }
+    .product-header {
+        border-bottom: 2px solid #707070;
+    }
+
+}
+
+
+/* --------- CATEGORIES PAGE -------- */
+
+.categories{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.categories div{
+
+}
+.categories ion-icon{
+    width: 50px;
+    height: 50px;
+    color: #707070;
+    margin: 10px 0 0 0;
+}
+.categories ion-icon:hover{
+    color: #D96D00;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+}
+
+h3{
+    color: #707070;
+    margin: 0;
+}
+
+
+/* -------- CONTACT PAGE --------- */
+.contact-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+.our-team {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.our-team div{
+    display: inline;
+    margin: 50px 0 0 40px ;
+    width: 25%;
+}
+.our-team img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.our-team div h3{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+aside{
+    text-align: center;
+    margin: 150px 100px 125px 100px;
+    width: 30%;
+    background: #efefef;
+}
+aside div{
+    margin-top: 20px ;
+}
+aside .video video{
+    width: 300px;
+
+}
+aside .photo img{
+    width: 300px;
+}
+aside .social-media{
+   display: inline-grid;
+}
+aside .social-media ion-icon{
+    width: 50px;
+    height: 50px;
+}
+aside .social-media ion-icon:hover {
+    color: #D96D00;
+}
+.contact-container{
+    width: 45%;
+    text-align: left;
+    margin: 0px 0 50px 100px;
+}
+.contact-container h2{
+    margin: 50px 0;
+}
+.contact-information{
+    width: 100%;
+    display: inline-grid;
+    text-align: left;
+}
+.contact-information input,  textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background: #efefef;
+}
+.contact-information textarea{
+    height: 300px;
+}
+.contact-information .submit{
+    width: 25%;
+}
+.contact-information .submit:hover{
+    color: white;
+    background: #D96D00;
+    cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+    .our-team div{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0 0 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .contact-container {
+        width: 100%;
+        text-align: center;
+        margin: 0 50px 0 50px;
+    }
+    aside {
+        text-align: center;
+        margin: 50px 50px 50px 50px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* Google maps directions API */
+/* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+.map-popup {
+    height: 100%;
+    display: none;
+}
+
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    padding-left: 10px;
+}
+/* Google maps directions API    PÄÄTTYY TÄHÄN */
+
+
+
+/* api page */
+.api{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.kuva img{
+    height: 700px;
+}
+.food{
+    margin: 50px;
+    width: 100%;
+}
+.api input{
+    height: 40px;
+    background: #e7e7e7;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    padding:  5px 5px;
+}
+.api button{
+    height: 50px;
+    background: #707070;
+    color: white;
+    padding: 10px;
+}
+.weather{
+    width: 100%;
+}
+.api-result{
+    padding: 50px 300px 50px 300px;
+    margin: 50px;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .api-result{
+        width: 100%;
+        padding: 0;
+    }
+}
+
