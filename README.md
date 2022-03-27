@@ -1,2 +1,2 @@
 # basaari
-Ecommerce site ceated with HTML, CSS3 % Vanilla JS
+Ecommerce site developed with HTML, CSS3 & Vanilla JS
